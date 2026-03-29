@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1d9cce;
+    color: rgb(40, 37, 37);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD SIZE (rectangle) */
+.card {
+    width: 350px;
+    height: 250px;
+    overflow: hidden; /* hides overflow */
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes image fill the rectangle */
+}
+
