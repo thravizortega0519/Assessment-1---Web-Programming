@@ -1,0 +1,116 @@
+/* Background */
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('gs.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Glass Container */
+
+.container {
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+    color: rgb(81, 19, 19);
+}
+
+/* Title */
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input group */
+
+.input {
+    margin-bottom: 25px;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Input fields */
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 10px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(11, 0, 0);
+
+    font-size: 16px;
+    outline: none;
+}
+
+/* Placeholder color */
+
+input::placeholder {
+    color: #a40000;
+}
+
+/* Focus effect */
+
+input[type="number"]:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 10px;
+    border: none;
+
+    background: linear-gradient(135deg, #ff4d4d, #8B0000);
+    color: rgb(125, 46, 46);
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Result text */
+
+#totalCost {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
